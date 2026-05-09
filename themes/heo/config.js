@@ -18,11 +18,11 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: '分享编程',
-  HEO_HERO_TITLE_2: '与技术',
+  HEO_HERO_TITLE_1: '分享Agent',
+  HEO_HERO_TITLE_2: '拥抱AI',
   HEO_HERO_TITLE_3: 'www.sxuan.top',
   HEO_HERO_TITLE_4: '新版上线',
-  HEO_HERO_TITLE_5: '一个Javaer的技术总结与分享',
+  HEO_HERO_TITLE_5: '分享AI资讯、传播个人思考、记录时代印记。',
   HEO_HERO_TITLE_LINK: 'https://www.sxuan.top',
   // 英雄区遮罩文字
   HEO_HERO_COVER_TITLE: '随便逛逛',
@@ -74,14 +74,14 @@ const CONFIG = {
       img_2: '/images/heo/2023e4058a91608ea41751c4f102b131f267075902.webp',
       color_2: '#4082c3'
     },
-    // {
-    //   title_1: 'FinalCutPro',
-    //   img_1: '/images/heo/20233e777652412247dd57fd9b48cf997c01070702.webp',
-    //   color_1: '#ffffff',
-    //   title_2: 'Python',
-    //   img_2: '/images/heo/20235c0731cd4c0c95fc136a8db961fdf963071502.webp',
-    //   color_2: '#ffffff'
-    // },
+    {
+      //   title_1: 'FinalCutPro',
+      //   img_1: '/images/heo/20233e777652412247dd57fd9b48cf997c01070702.webp',
+      //   color_1: '#ffffff',
+      title_2: 'Python',
+      img_2: '/images/heo/20235c0731cd4c0c95fc136a8db961fdf963071502.webp',
+      color_2: '#ffffff'
+    },
     // {
     //   title_1: 'Swift',
     //   img_1: '/images/heo/202328bbee0b314297917b327df4a704db5c072402.webp',

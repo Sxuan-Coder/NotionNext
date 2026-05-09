@@ -14,7 +14,7 @@ export default function DashboardItemHome() {
       </div>
 
       {/* 页面说明 */}
-      <div className='mb-8 text-lg text-gray-700 dark:text-gray-300'>
+      <div className='mb-8 text-lg text-gray-700 dark:text-gray-300'>                               
         <p>
           欢迎来到用户中心页面！在这里，您可以查看用户的账号信息与业务订单概况。
         </p>
