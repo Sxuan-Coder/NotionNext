@@ -45,7 +45,7 @@ const PaginationNumber = ({ page, totalPage }) => {
   return (
     <>
       {/* pc端分页按钮 */}
-      <div className='hidden lg:flex justify-between items-end mt-10 font-medium text-black duration-500 dark:text-gray-300 pt-3 space-x-2 overflow-x-auto'>
+      <div className='hidden lg:flex justify-between items-end mt-10 font-medium text-[var(--heo-text)] duration-500 dark:text-[var(--heo-text)] pt-3 space-x-2 overflow-x-auto'>
         {/* 上一页 */}
         <SmartLink
           href={{
@@ -153,9 +153,9 @@ function getPageElement(page, currentPage, pagePrefix) {
       passHref
       className={
         (selected
-          ? 'bg-indigo-600 dark:bg-yellow-600 text-white '
+          ? 'bg-[var(--heo-main)] dark:bg-yellow-600 text-white '
           : 'dark:bg-[#1e1e1e] bg-white') +
-        ' hover:border-indigo-600 dark:hover:bg-yellow-600 dark:border-gray-600 px-4 border py-2 rounded-lg drop-shadow-sm duration-200 transition-colors'
+        ' hover:border-[var(--heo-main)] dark:hover:bg-yellow-600 dark:border-white/10 px-4 border py-2 rounded-lg drop-shadow-sm duration-200 transition-colors'
       }>
       {page}
     </SmartLink>

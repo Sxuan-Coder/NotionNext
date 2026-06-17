@@ -12,7 +12,7 @@ const Footer = () => {
   const BEI_AN_LINK = siteConfig('BEI_AN_LINK')
   const BIO = siteConfig('BIO')
   return (
-    <footer className='relative flex-shrink-0 bg-white dark:bg-[#1a191d] justify-center text-center m-auto w-full leading-6  text-gray-600 dark:text-gray-100 text-sm'>
+    <footer className='relative flex-shrink-0 bg-white dark:bg-[#1a191d] justify-center text-center m-auto w-full leading-6 text-[var(--heo-text-2)] dark:text-[var(--heo-text-2)] text-sm'>
       {/* 颜色过度区 */}
       <div
         id='color-transition'
@@ -36,7 +36,7 @@ const Footer = () => {
             <CopyRightDate />
             <a
               href={'/about'}
-              className='underline font-semibold dark:text-gray-300 '>
+              className='underline font-semibold dark:text-[var(--heo-text-2)] '>
               {siteConfig('AUTHOR')}
             </a>
             {BIO && <span className='mx-1'> | {BIO}</span>}

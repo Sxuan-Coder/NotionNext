@@ -23,14 +23,14 @@ const SocialButton = () => {
 
   return (
     <div className='w-full justify-center flex-wrap flex'>
-      <div className='space-x-12 text-3xl text-gray-600 dark:text-gray-300 '>
+      <div className='space-x-12 text-3xl text-[var(--heo-text-2)] dark:text-[var(--heo-text-2)] '>
         {CONTACT_GITHUB && (
           <a
             target='_blank'
             rel='noreferrer'
             title={'github'}
             href={CONTACT_GITHUB}>
-            <i className='transform hover:scale-125 duration-150 fab fa-github dark:hover:text-indigo-400 hover:text-indigo-600' />
+            <i className='transform hover:scale-125 duration-150 fab fa-github dark:hover:text-[var(--heo-main)] hover:text-[var(--heo-main)]' />
           </a>
         )}
         {CONTACT_TWITTER && (
@@ -39,7 +39,7 @@ const SocialButton = () => {
             rel='noreferrer'
             title={'twitter'}
             href={CONTACT_TWITTER}>
-            <i className='transform hover:scale-125 duration-150 fab fa-twitter dark:hover:text-indigo-400 hover:text-indigo-600' />
+            <i className='transform hover:scale-125 duration-150 fab fa-twitter dark:hover:text-[var(--heo-main)] hover:text-[var(--heo-main)]' />
           </a>
         )}
         {CONTACT_TELEGRAM && (
@@ -48,7 +48,7 @@ const SocialButton = () => {
             rel='noreferrer'
             href={CONTACT_TELEGRAM}
             title={'telegram'}>
-            <i className='transform hover:scale-125 duration-150 fab fa-telegram dark:hover:text-indigo-400 hover:text-indigo-600' />
+            <i className='transform hover:scale-125 duration-150 fab fa-telegram dark:hover:text-[var(--heo-main)] hover:text-[var(--heo-main)]' />
           </a>
         )}
         {CONTACT_LINKEDIN && (
@@ -57,7 +57,7 @@ const SocialButton = () => {
             rel='noreferrer'
             href={CONTACT_LINKEDIN}
             title={'linkIn'}>
-            <i className='transform hover:scale-125 duration-150 fab fa-linkedin dark:hover:text-indigo-400 hover:text-indigo-600' />
+            <i className='transform hover:scale-125 duration-150 fab fa-linkedin dark:hover:text-[var(--heo-main)] hover:text-[var(--heo-main)]' />
           </a>
         )}
         {CONTACT_WEIBO && (
@@ -66,7 +66,7 @@ const SocialButton = () => {
             rel='noreferrer'
             title={'weibo'}
             href={CONTACT_WEIBO}>
-            <i className='transform hover:scale-125 duration-150 fab fa-weibo dark:hover:text-indigo-400 hover:text-indigo-600' />
+            <i className='transform hover:scale-125 duration-150 fab fa-weibo dark:hover:text-[var(--heo-main)] hover:text-[var(--heo-main)]' />
           </a>
         )}
         {CONTACT_INSTAGRAM && (
@@ -75,7 +75,7 @@ const SocialButton = () => {
             rel='noreferrer'
             title={'instagram'}
             href={CONTACT_INSTAGRAM}>
-            <i className='transform hover:scale-125 duration-150 fab fa-instagram dark:hover:text-indigo-400 hover:text-indigo-600' />
+            <i className='transform hover:scale-125 duration-150 fab fa-instagram dark:hover:text-[var(--heo-main)] hover:text-[var(--heo-main)]' />
           </a>
         )}
         {CONTACT_EMAIL && (
@@ -84,7 +84,7 @@ const SocialButton = () => {
             title='email'
             className='cursor-pointer'
             ref={emailIcon}>
-            <i className='transform hover:scale-125 duration-150 fas fa-envelope dark:hover:text-indigo-400 hover:text-indigo-600' />
+            <i className='transform hover:scale-125 duration-150 fas fa-envelope dark:hover:text-[var(--heo-main)] hover:text-[var(--heo-main)]' />
           </a>
         )}
         {ENABLE_RSS && (
@@ -93,7 +93,7 @@ const SocialButton = () => {
             rel='noreferrer'
             title={'RSS'}
             href={'/rss/feed.xml'}>
-            <i className='transform hover:scale-125 duration-150 fas fa-rss dark:hover:text-indigo-400 hover:text-indigo-600' />
+            <i className='transform hover:scale-125 duration-150 fas fa-rss dark:hover:text-[var(--heo-main)] hover:text-[var(--heo-main)]' />
           </a>
         )}
         {CONTACT_BILIBILI && (
@@ -102,7 +102,7 @@ const SocialButton = () => {
             rel='noreferrer'
             title={'bilibili'}
             href={CONTACT_BILIBILI}>
-            <i className='transform hover:scale-125 duration-150 fab fa-bilibili dark:hover:text-indigo-400 hover:text-indigo-600' />
+            <i className='transform hover:scale-125 duration-150 fab fa-bilibili dark:hover:text-[var(--heo-main)] hover:text-[var(--heo-main)]' />
           </a>
         )}
         {CONTACT_YOUTUBE && (
@@ -111,7 +111,7 @@ const SocialButton = () => {
             rel='noreferrer'
             title={'youtube'}
             href={CONTACT_YOUTUBE}>
-            <i className='transform hover:scale-125 duration-150 fab fa-youtube dark:hover:text-indigo-400 hover:text-indigo-600' />
+            <i className='transform hover:scale-125 duration-150 fab fa-youtube dark:hover:text-[var(--heo-main)] hover:text-[var(--heo-main)]' />
           </a>
         )}
       </div>

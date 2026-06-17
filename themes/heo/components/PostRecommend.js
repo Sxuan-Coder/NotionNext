@@ -24,7 +24,7 @@ export default function PostRecommend({ recommendPosts, siteInfo }) {
     <div className='pt-8 hidden md:block'>
       {/* 推荐文章 */}
       <div className=' mb-2 px-1 flex flex-nowrap justify-between'>
-        <div className='dark:text-gray-300 text-lg font-bold'>
+        <div className='text-[var(--heo-text)] dark:text-[var(--heo-text)] text-lg font-bold'>
           <i className='mr-2 fas fa-thumbs-up' />
           {locale.COMMON.RELATE_POSTS}
         </div>

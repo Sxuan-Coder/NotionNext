@@ -78,14 +78,14 @@ const Catalog = ({ toc }) => {
               <a
                 key={id}
                 href={`#${id}`}
-                className={`notion-table-of-contents-item duration-300 transform dark:text-gray-200
+                className={`notion-table-of-contents-item duration-300 transform dark:text-[var(--heo-text-2)]
             notion-table-of-contents-item-indent-level-${tocItem.indentLevel} catalog-item `}>
                 <span
                   style={{
                     display: 'inline-block',
                     marginLeft: tocItem.indentLevel * 16
                   }}
-                  className={`truncate ${activeSection === id ? 'font-bold text-indigo-600' : ''}`}>
+                  className={`truncate ${activeSection === id ? 'font-bold text-[var(--heo-main)]' : ''}`}>
                   {tocItem.text}
                 </span>
               </a>

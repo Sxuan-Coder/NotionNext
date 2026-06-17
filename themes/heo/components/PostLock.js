@@ -32,7 +32,7 @@ export const PostLock = props => {
       id='container'
       className='w-full flex justify-center items-center h-96 '>
       <div className='text-center space-y-3'>
-        <div className='font-bold dark:text-gray-300 text-black'>
+        <div className='font-bold text-[var(--heo-text)] dark:text-[var(--heo-text)]'>
           {locale.COMMON.ARTICLE_LOCK_TIPS}
         </div>
         <div className='flex mx-4'>
@@ -48,7 +48,7 @@ export const PostLock = props => {
             className='outline-none w-full text-sm pl-5 rounded-l transition focus:shadow-lg  font-light leading-10 bg-gray-100 dark:bg-gray-500'></input>
           <div
             onClick={submitPassword}
-            className='px-3 whitespace-nowrap cursor-pointer items-center justify-center py-2 bg-indigo-500 hover:bg-indigo-400 text-white rounded-r duration-300'>
+            className='px-3 whitespace-nowrap cursor-pointer items-center justify-center py-2 bg-[var(--heo-main)] hover:bg-[var(--heo-main)] text-white rounded-r duration-300'>
             <i className={'duration-200 cursor-pointer fas fa-key'}>
               &nbsp;{locale.COMMON.SUBMIT}
             </i>

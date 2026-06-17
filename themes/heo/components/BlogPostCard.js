@@ -64,7 +64,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
             {/* 分类 */}
             {post?.category && (
               <div
-                className={`flex mb-1 items-center ${showPreview ? 'justify-center' : 'justify-start'} hidden md:block flex-wrap dark:text-gray-300 text-gray-600 hover:text-[var(--heo-main)] dark:hover:text-yellow-500`}>
+                className={`flex mb-1 items-center ${showPreview ? 'justify-center' : 'justify-start'} hidden md:block flex-wrap text-[var(--heo-text-3)] dark:text-[var(--heo-text-2)] hover:text-[var(--heo-main)] dark:hover:text-yellow-500`}>
                 <SmartLink
                   passHref
                   href={`/category/${post.category}`}
@@ -79,7 +79,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
               href={post?.href}
               passHref
               className={
-                ' group-hover:text-[var(--heo-main)] dark:hover:text-yellow-700 dark:group-hover:text-yellow-600 text-[var(--heo-text)] dark:text-gray-100 line-clamp-2 replace cursor-pointer text-xl font-extrabold leading-tight'
+                ' group-hover:text-[var(--heo-main)] dark:hover:text-yellow-700 dark:group-hover:text-yellow-600 text-[var(--heo-text)] dark:text-gray-100 line-clamp-2 replace cursor-pointer text-xl font-extrabold tracking-tight leading-tight'
               }>
               {siteConfig('POST_TITLE_ICON') && (
                 <NotionIcon
@@ -93,7 +93,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
 
           {/* 摘要 */}
           {(!showPreview || showSummary) && (
-            <main className='line-clamp-2 replace text-gray-700  dark:text-gray-300 text-sm font-light leading-tight'>
+            <main className='line-clamp-2 replace text-[var(--heo-text-2)] dark:text-[var(--heo-text-2)] text-sm font-light leading-relaxed'>
               {post.summary}
             </main>
           )}

@@ -13,7 +13,10 @@ const Style = () => {
         --heo-background: #f7f9fe;        /* 页面背景 */
         --heo-card: #ffffff;              /* 卡片背景 */
         --heo-card-border: #e3e8f7;       /* 卡片极淡蓝灰边框 */
-        --heo-text: #363636;              /* 卡片深灰文字 */
+        --heo-text: #363636;              /* 标题/主文字（深） */
+        --heo-text-2: #5b6168;            /* 正文文字 */
+        --heo-text-3: #8a8f96;            /* 辅助/次要文字 */
+        --heo-ease: cubic-bezier(0.4, 0, 0.25, 1);  /* 统一缓动曲线 */
         --heo-shadow-black: 0 0 12px 4px rgba(0, 0, 0, 0.05);          /* 卡片基础微阴影 */
         --heo-shadow-blue: 0 8px 12px -3px rgba(40, 109, 234, 0.20);   /* hover 主色阴影 */
         --heo-shadow-blackdeep: 0 2px 16px -3px rgba(0, 0, 0, 0.15);   /* 深阴影 */
@@ -25,6 +28,8 @@ const Style = () => {
         --heo-card: #1e1e1e;
         --heo-card-border: rgba(255, 255, 255, 0.08);
         --heo-text: #cccccc;
+        --heo-text-2: #a0a4a8;
+        --heo-text-3: #6f7378;
         --heo-shadow-black: 0 0 12px 4px rgba(0, 0, 0, 0.30);
         --heo-shadow-blue: 0 8px 12px -3px rgba(40, 109, 234, 0.30);
         --heo-shadow-blackdeep: 0 2px 16px -3px rgba(0, 0, 0, 0.50);
@@ -34,12 +39,15 @@ const Style = () => {
 
       body {
         background-color: var(--heo-background);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
       }
 
       /* ===== heo 卡片统一阴影工具类（阴影驱动，对齐 zhheo） ===== */
       #theme-heo .heo-card {
         box-shadow: var(--heo-shadow-black);
-        transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+        transition: box-shadow 0.3s var(--heo-ease), transform 0.3s var(--heo-ease), border-color 0.3s var(--heo-ease);
       }
       #theme-heo .heo-card-hover:hover {
         box-shadow: var(--heo-shadow-hover);

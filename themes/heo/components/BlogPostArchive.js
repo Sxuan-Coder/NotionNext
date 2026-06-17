@@ -17,7 +17,7 @@ const BlogPostArchive = ({ posts = [], archiveTitle, siteInfo }) => {
   } else {
     return (
       <div className=''>
-        <div className='pb-4 dark:text-gray-300' id={archiveTitle}>
+        <div className='pb-4 text-[var(--heo-text)] dark:text-[var(--heo-text)]' id={archiveTitle}>
           {archiveTitle}
         </div>
         <ul>
@@ -39,7 +39,7 @@ const BlogPostArchive = ({ posts = [], archiveTitle, siteInfo }) => {
               <div
                 key={post.id}
                 className={
-                  'cursor-pointer flex flex-row mb-4 h-24 md:flex-row group w-full  dark:border-gray-600 hover:border-indigo-600  dark:hover:border-yellow-600 duration-300 transition-colors justify-between overflow-hidden'
+                  'cursor-pointer flex flex-row mb-4 h-24 md:flex-row group w-full heo-card heo-card-hover border border-[var(--heo-card-border)] dark:border-white/10 hover:border-[var(--heo-main)] dark:hover:border-[var(--heo-main)] duration-300 transition-colors justify-between overflow-hidden rounded-xl'
                 }>
                 {/* 图片封面 */}
                 {showPageCover && (
@@ -59,11 +59,11 @@ const BlogPostArchive = ({ posts = [], archiveTitle, siteInfo }) => {
                     {/* 分类 */}
                     {post?.category && (
                       <div
-                        className={`flex items-center ${showPreview ? 'justify-center' : 'justify-start'} hidden md:block flex-wrap dark:text-gray-500 text-gray-600 `}>
+                        className={`flex items-center ${showPreview ? 'justify-center' : 'justify-start'} hidden md:block flex-wrap text-[var(--heo-text-3)] dark:text-[var(--heo-text-2)] `}>
                         <SmartLink
                           passHref
                           href={`/category/${post.category}`}
-                          className='cursor-pointer text-xs font-normal menu-link hover:text-indigo-700  dark:text-gray-600 transform'>
+                          className='cursor-pointer text-xs font-normal menu-link hover:text-[var(--heo-main)] dark:text-[var(--heo-text-3)] transform'>
                           {post.category}
                         </SmartLink>
                       </div>
@@ -74,7 +74,7 @@ const BlogPostArchive = ({ posts = [], archiveTitle, siteInfo }) => {
                       href={post?.href}
                       passHref
                       className={
-                        ' group-hover:text-indigo-700 group-hover:dark:text-indigo-400 text-black dark:text-gray-100 dark:group-hover:text-yellow-600 line-clamp-2 replace cursor-pointer text-xl font-extrabold leading-tight'
+                        ' group-hover:text-[var(--heo-main)] text-[var(--heo-text)] dark:text-[var(--heo-text)] dark:group-hover:text-yellow-600 line-clamp-2 replace cursor-pointer text-xl font-extrabold tracking-tight leading-tight'
                       }>
                       <span className='menu-link '>{post.title}</span>
                     </SmartLink>
